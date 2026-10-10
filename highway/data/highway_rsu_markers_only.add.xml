@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <poi id="rsu0" x="1263.34" y="2353.28" color="1,0,0" layer="200" type="RSU" width="20" height="20"/>
+    <poi id="rsu1" x="892.78" y="1644.31" color="1,0,0" layer="200" type="RSU" width="20" height="20"/>
+    <poi id="rsu2" x="520.9" y="936.07" color="1,0,0" layer="200" type="RSU" width="20" height="20"/>
+    <poi id="rsu3" x="154.55" y="224.99" color="1,0,0" layer="200" type="RSU" width="20" height="20"/>
+</additional>

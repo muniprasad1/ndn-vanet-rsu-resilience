@@ -1,0 +1,21 @@
+<additional>
+    <poi id="rsu0" type="RSU" color="255,140,0" layer="100" x="2702.60" y="1057.79" width="40" height="40"/>
+    <poi id="rsu1" type="RSU" color="0,170,0" layer="100" x="3852.33" y="1300.42" width="40" height="40"/>
+    <poi id="rsu2" type="RSU" color="0,170,0" layer="100" x="4716.35" y="1276.46" width="40" height="40"/>
+    <poi id="rsu3" type="RSU" color="0,170,0" layer="100" x="6575.48" y="1100.61" width="40" height="40"/>
+    <poi id="rsu4" type="RSU" color="0,170,0" layer="100" x="8329.07" y="616.42" width="40" height="40"/>
+    <poi id="rsu5" type="RSU" color="0,170,0" layer="100" x="952.01" y="2533.88" width="40" height="40"/>
+    <poi id="rsu6" type="RSU" color="0,170,0" layer="100" x="2444.75" y="2693.01" width="40" height="40"/>
+    <poi id="rsu7" type="RSU" color="255,140,0" layer="100" x="3743.43" y="2712.85" width="40" height="40"/>
+    <poi id="rsu8" type="RSU" color="0,170,0" layer="100" x="5088.97" y="3053.44" width="40" height="40"/>
+    <poi id="rsu9" type="RSU" color="0,170,0" layer="100" x="3304.70" y="4148.41" width="40" height="40"/>
+    <poi id="rsu10" type="RSU" color="0,170,0" layer="100" x="5226.67" y="4885.72" width="40" height="40"/>
+    <poi id="rsu11" type="RSU" color="255,0,0" layer="100" x="6724.89" y="3824.85" width="40" height="40"/>
+    <poi id="rsu12" type="RSU" color="0,170,0" layer="100" x="8070.70" y="3915.83" width="40" height="40"/>
+    <poi id="rsu13" type="RSU" color="255,0,0" layer="100" x="2035.09" y="5555.16" width="40" height="40"/>
+    <poi id="rsu14" type="RSU" color="0,170,0" layer="100" x="3498.15" y="5229.24" width="40" height="40"/>
+    <poi id="rsu15" type="RSU" color="0,170,0" layer="100" x="5497.30" y="5780.17" width="40" height="40"/>
+    <poi id="rsu16" type="RSU" color="0,170,0" layer="100" x="6648.63" y="5448.00" width="40" height="40"/>
+    <poi id="rsu17" type="RSU" color="0,170,0" layer="100" x="7846.42" y="5342.24" width="40" height="40"/>
+    <poi id="rsu18" type="RSU" color="0,170,0" layer="100" x="5708.92" y="7247.28" width="40" height="40"/>
+</additional>

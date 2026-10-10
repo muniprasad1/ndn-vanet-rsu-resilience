@@ -1,0 +1,19 @@
+SatisfiedInterests: 10371   TimedOutInterests: 185
+ISR: 98.25%
+LastDelay avg: 39.814 ms  (n=5201)
+FullDelay avg: 0.222 s  (n=5201)
+RSU backbone  satisfied=7772 timedout=92 ISR=98.83%
+Vehicles      satisfied=2599 timedout=93 ISR=96.55%
+
+Per random requester:
+ vehicle   sumo_id  node               requests      window(s)    sat   tout   ISR% LastDelay_ms FullDelay_s
+      69     veh69    73 /traffic/update/rsu3/info    172-258         8     31   20.5        25.10       29.03
+     101    veh101   105 /traffic/update/rsu2/info    251-342        36      3   92.3        50.13        1.18
+     103    veh103   107 /traffic/update/rsu0/info    256-348        30     19   61.2        25.10       10.72
+     129    veh129   133 /traffic/update/rsu3/info    321-408        28     17   62.2        36.52       13.11
+     140    veh140   144 /traffic/update/rsu0/info    348-430        40      3   93.0        44.99        0.52
+     147    veh147   151 /traffic/update/rsu2/info    365-452        44      0  100.0        59.46        0.06
+     162    veh162   166 /traffic/update/rsu3/info    402-490        44      0  100.0        80.37        0.08
+     173    veh173   177 /traffic/update/rsu0/info    430-506        38      0  100.0        51.42        0.05
+     179    veh179   183 /traffic/update/rsu1/info    444-526        41      0  100.0        53.38        0.05
+     183    veh183   187 /traffic/update/rsu1/info    454-534        41      0  100.0        55.74        0.06

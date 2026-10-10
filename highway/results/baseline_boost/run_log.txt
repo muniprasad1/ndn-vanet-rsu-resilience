@@ -1,0 +1,549 @@
+==== ODD scenario: highway ====
+Loaded 4 RSUs, 2 scheduled failures, 929 candidate links, 4369 V2V links.
+[LIVE-COSIM] Loaded 243 sumo-id <-> node-index mappings
+[BRIDGE-CLIENT] Connected to bridge at 127.0.0.1:9001
+[LIVE-COSIM] Live co-simulation ENABLED -- vehicle positions driven by the SUMO bridge, step interval=1s
+[RSU-BACKBONE] 3 RSU<->RSU neighbour pairs within 800 m
+[CANDIDATE-LINKS] Pre-created 929 unique RSU<->vehicle links
+[V2V-LINKS] Pre-created 4367 unique vehicle<->vehicle links
+[LAST-MILE] Built face->vehicle index: 929 entries
+[FAILURE-SCHEDULED] rsu0 down 283.9s-354.1s (link rsu0<->rsu1)
+[FAILURE-SCHEDULED] rsu2 down 160.8s-353.5s (link rsu1<->rsu2)
+[FAILURE-SCHEDULED] rsu2 down 160.8s-353.5s (link rsu2<->rsu3)
+[RANDOM-REQUESTS] Wiring 10 randomly-chosen vehicles as requesters (pool of 243 vehicles with real contact windows)
+[RANDOM-REQUESTS] Vehicle162 requesting /traffic/update/rsu3 from t=402s to t=489.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle103 requesting /traffic/update/rsu0 from t=256s to t=347.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle183 requesting /traffic/update/rsu1 from t=454s to t=534.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle69 requesting /traffic/update/rsu3 from t=172s to t=257.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle173 requesting /traffic/update/rsu0 from t=430s to t=505.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle129 requesting /traffic/update/rsu3 from t=321s to t=407.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle147 requesting /traffic/update/rsu2 from t=365s to t=452.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle140 requesting /traffic/update/rsu0 from t=348s to t=430.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle101 requesting /traffic/update/rsu2 from t=251s to t=342.5s across 4 real contact windows
+[RANDOM-REQUESTS] Vehicle179 requesting /traffic/update/rsu1 from t=444s to t=525.5s across 4 real contact windows
+[HAZARD] Loaded 3 pre-decided breakdown events
+[HAZARD] Vehicle82 breaks down at t=259.6s
+  [HAZARD-SUBSCRIBE] Node1 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=15s)
+[HAZARD] rsu1 warned of Vehicle82's breakdown
+  [HAZARD-SUBSCRIBE] Node2 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=15s)
+[HAZARD] rsu2 warned of Vehicle82's breakdown
+  [HAZARD-SUBSCRIBE] Node87 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=15s)
+[HAZARD] Vehicle83 warned of Vehicle82's breakdown
+  [HAZARD-SUBSCRIBE] Node88 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=15s)
+[HAZARD] Vehicle84 warned of Vehicle82's breakdown
+  [HAZARD-SUBSCRIBE] Node94 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=15s)
+[HAZARD] Vehicle90 warned of Vehicle82's breakdown
+  [HAZARD-SUBSCRIBE] Node98 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=11.6s)
+[HAZARD] Vehicle94 warned of Vehicle82's breakdown
+  [HAZARD-SUBSCRIBE] Node96 subscribing early to /safety/hazard/breakdown/veh82 (lifetime=10.6s)
+[HAZARD] Vehicle92 warned of Vehicle82's breakdown
+[HAZARD] Vehicle38 breaks down at t=100.8s
+  [HAZARD-SUBSCRIBE] Node0 subscribing early to /safety/hazard/breakdown/veh38 (lifetime=15s)
+[HAZARD] rsu0 warned of Vehicle38's breakdown
+  [HAZARD-SUBSCRIBE] Node41 subscribing early to /safety/hazard/breakdown/veh38 (lifetime=15s)
+[HAZARD] Vehicle37 warned of Vehicle38's breakdown
+  [HAZARD-SUBSCRIBE] Node40 subscribing early to /safety/hazard/breakdown/veh38 (lifetime=15s)
+[HAZARD] Vehicle36 warned of Vehicle38's breakdown
+  [HAZARD-SUBSCRIBE] Node44 subscribing early to /safety/hazard/breakdown/veh38 (lifetime=11.8s)
+[HAZARD] Vehicle40 warned of Vehicle38's breakdown
+[HAZARD] Vehicle101 breaks down at t=299.8s
+  [HAZARD-SUBSCRIBE] Node1 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=15s)
+[HAZARD] rsu1 warned of Vehicle101's breakdown
+  [HAZARD-SUBSCRIBE] Node2 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=15s)
+[HAZARD] rsu2 warned of Vehicle101's breakdown
+  [HAZARD-SUBSCRIBE] Node104 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=15s)
+[HAZARD] Vehicle100 warned of Vehicle101's breakdown
+  [HAZARD-SUBSCRIBE] Node106 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=15s)
+[HAZARD] Vehicle102 warned of Vehicle101's breakdown
+  [HAZARD-SUBSCRIBE] Node109 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=15s)
+[HAZARD] Vehicle105 warned of Vehicle101's breakdown
+  [HAZARD-SUBSCRIBE] Node110 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=11.8s)
+[HAZARD] Vehicle106 warned of Vehicle101's breakdown
+  [HAZARD-SUBSCRIBE] Node111 subscribing early to /safety/hazard/breakdown/veh101 (lifetime=10.8s)
+[HAZARD] Vehicle107 warned of Vehicle101's breakdown
+  [HAZARD-ALERT-ROUTE] Node0 can now relay /safety/hazard/breakdown/veh38
+  [HAZARD-ALERT-ROUTE] Node41 can now relay /safety/hazard/breakdown/veh38
+  [HAZARD-ALERT-ROUTE] Node40 can now relay /safety/hazard/breakdown/veh38
+  [HAZARD-ALERT-ROUTE] Node44 can now relay /safety/hazard/breakdown/veh38
+[LIVE-COSIM] Live breakdown command for veh38 at t=100.8s -> OK
+  [HAZARD-RECEIVED] rsu0 <- Vehicle38 stopped at (1496.6, 2848.2), reported t=100.8s, received t=100.812s: relays the warning to approaching vehicles
+  [HAZARD-RECEIVED] Vehicle37 <- Vehicle38 stopped at (1496.6, 2848.2), reported t=100.8s, received t=100.812s: hazard 158 m behind -> no action needed
+  [HAZARD-RECEIVED] Vehicle36 <- Vehicle38 stopped at (1496.6, 2848.2), reported t=100.8s, received t=100.812s: hazard 158 m behind -> no action needed
+  [HAZARD-RECEIVED] Vehicle40 <- Vehicle38 stopped at (1496.6, 2848.2), reported t=100.8s, received t=100.812s: hazard 176 m AHEAD -> SLOW DOWN 39.9->20.0 m/s
+  [PIT-EXPIRED] Interest seq=156 from origin RSU (rsu1) timed out at t=161.2s -- destination RSU unreachable, triggering live VCF selection
+  [RANGE-BOOST-TRIGGERED] VCF disabled -- using direct boost link
+  [RANGE-BOOST] VCF unavailable -- falling back to expensive direct link rsu1<->rsu2 at t=161.2s
+  [PIT-EXPIRED] Interest seq=156 from origin RSU (rsu2) timed out at t=161.2s -- destination RSU unreachable, triggering live VCF selection
+  [RANGE-BOOST-TRIGGERED] VCF disabled -- using direct boost link
+  [RANGE-BOOST] VCF unavailable -- falling back to expensive direct link rsu2<->rsu3 at t=161.2s
+  [PIT-EXPIRED] Interest seq=156 from origin RSU (rsu2) timed out at t=161.2s -- destination RSU unreachable, triggering live VCF selection
+  [RANGE-BOOST-TRIGGERED] VCF disabled -- using direct boost link
+  [RANGE-BOOST] VCF unavailable -- falling back to expensive direct link rsu2<->rsu1 at t=161.2s
+  [PIT-EXPIRED] Interest seq=156 from origin RSU (rsu3) timed out at t=161.2s -- destination RSU unreachable, triggering live VCF selection
+  [RANGE-BOOST-TRIGGERED] VCF disabled -- using direct boost link
+  [RANGE-BOOST] VCF unavailable -- falling back to expensive direct link rsu3<->rsu2 at t=161.2s
+  [RANGE-BOOST] Node1 now routes /traffic/update/rsu2 via a single next hop at t=161.25s
+  [RANGE-BOOST] Node2 now routes /traffic/update/rsu3 via a single next hop at t=161.25s
+  [RANGE-BOOST] Node2 now routes /traffic/update/rsu1 via a single next hop at t=161.25s
+  [RANGE-BOOST] Node3 now routes /traffic/update/rsu2 via a single next hop at t=161.25s
+  [VEHICLE-V2I-SETUP] Node73 can now relay /traffic/update/rsu3
+  [REQUEST] Vehicle69 -> rsu3 (traffic info) at t=172s
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=172.025s (data made t=172.0s, age 0.025008s): 11 veh, avg 35.8 m/s -> HEAVY [incident: Vehicle38-stopped]
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=174.025s (data made t=174.0s, age 0.025008s): 11 veh, avg 35.7 m/s -> HEAVY [incident: Vehicle38-stopped]
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=176.025s (data made t=176.0s, age 0.025008s): 9 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=178.025s (data made t=178.0s, age 0.025008s): 9 veh, avg 38.8 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node73 switched its route for /traffic/update/rsu3
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=180.05s (data made t=180.0s, age 0.050016s): 10 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=182.05s (data made t=182.0s, age 0.050016s): 10 veh, avg 39.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=184.05s (data made t=184.0s, age 0.050016s): 10 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=186.05s (data made t=186.0s, age 0.050016s): 9 veh, avg 39.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=188.05s (data made t=188.0s, age 0.050016s): 8 veh, avg 40.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=190.05s (data made t=190.0s, age 0.050016s): 11 veh, avg 40.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=192.05s (data made t=192.0s, age 0.050016s): 11 veh, avg 40.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=194.05s (data made t=194.0s, age 0.050016s): 10 veh, avg 40.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=196.05s (data made t=196.0s, age 0.050016s): 9 veh, avg 41.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle69 <- rsu3 at t=198.05s (data made t=198.0s, age 0.050016s): 9 veh, avg 41.5 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node73 switched its route for /traffic/update/rsu3
+  [VEHICLE-V2I-RECONNECT] Node73 switched its route for /traffic/update/rsu3
+  [VEHICLE-V2I-SETUP] Node105 can now relay /traffic/update/rsu2
+  [REQUEST] Vehicle101 -> rsu2 (traffic info) at t=251s
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=251.075s (data made t=251.0s, age 0.075024s): 17 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=253.075s (data made t=253.0s, age 0.075024s): 18 veh, avg 38.4 m/s -> LOW
+  [HAZARD-ALERT-ROUTE] Node1 can now relay /safety/hazard/breakdown/veh82
+  [HAZARD-ALERT-ROUTE] Node87 can now relay /safety/hazard/breakdown/veh82
+  [HAZARD-ALERT-ROUTE] Node2 can now relay /safety/hazard/breakdown/veh82
+  [HAZARD-ALERT-ROUTE] Node88 can now relay /safety/hazard/breakdown/veh82
+  [HAZARD-ALERT-ROUTE] Node94 can now relay /safety/hazard/breakdown/veh82
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=255.075s (data made t=255.0s, age 0.075024s): 19 veh, avg 38.9 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node107 can now relay /traffic/update/rsu0
+  [REQUEST] Vehicle103 -> rsu0 (traffic info) at t=256s
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=257.075s (data made t=257.0s, age 0.075024s): 19 veh, avg 38.9 m/s -> LOW
+  [HAZARD-ALERT-ROUTE] Node98 can now relay /safety/hazard/breakdown/veh82
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=259.075s (data made t=259.0s, age 0.075024s): 20 veh, avg 38.9 m/s -> LOW
+  [HAZARD-ALERT-ROUTE] Node96 can now relay /safety/hazard/breakdown/veh82
+[LIVE-COSIM] Live breakdown command for veh82 at t=259.6s -> OK
+  [HAZARD-RECEIVED] rsu1 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: relays the warning to approaching vehicles
+  [HAZARD-RECEIVED] rsu2 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: relays the warning to approaching vehicles
+  [HAZARD-RECEIVED] Vehicle83 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: hazard 216 m AHEAD -> CHANGE LANE 0->1 + SLOW DOWN 37.6->18.8 m/s
+  [HAZARD-RECEIVED] Vehicle84 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: hazard 79 m behind -> no action needed
+  [HAZARD-RECEIVED] Vehicle90 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: hazard 209 m behind -> no action needed
+  [HAZARD-RECEIVED] Vehicle94 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: hazard 104 m AHEAD -> SLOW DOWN 42.2->21.1 m/s
+  [HAZARD-RECEIVED] Vehicle92 <- Vehicle82 stopped at (579.2, 1098.8), reported t=259.6s, received t=259.612s: hazard 211 m AHEAD -> SLOW DOWN 31.6->15.8 m/s
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=261.075s (data made t=261.0s, age 0.075024s): 19 veh, avg 37.6 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=263.075s (data made t=263.0s, age 0.075024s): 21 veh, avg 36.1 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [VEHICLE-V2I-RECONNECT] Node107 switched its route for /traffic/update/rsu0
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=265.075s (data made t=265.0s, age 0.075024s): 21 veh, avg 35.0 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=267.075s (data made t=267.0s, age 0.075024s): 20 veh, avg 34.6 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=269.075s (data made t=269.0s, age 0.075024s): 19 veh, avg 35.1 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=271.075s (data made t=271.0s, age 0.075024s): 17 veh, avg 35.3 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [VEHICLE-V2I-RECONNECT] Node105 switched its route for /traffic/update/rsu2
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=273.05s (data made t=273.0s, age 0.050016s): 19 veh, avg 36.3 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=275.05s (data made t=275.0s, age 0.050016s): 19 veh, avg 37.0 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=277.05s (data made t=277.0s, age 0.050016s): 20 veh, avg 36.4 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=279.05s (data made t=279.0s, age 0.050016s): 20 veh, avg 35.6 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=281.05s (data made t=281.0s, age 0.050016s): 21 veh, avg 35.3 m/s -> HEAVY [incident: Vehicle82-stopped]
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=283.05s (data made t=283.0s, age 0.050016s): 20 veh, avg 37.2 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node107 switched its route for /traffic/update/rsu0
+  [PIT-EXPIRED] Interest seq=279 from origin RSU (rsu0) timed out at t=284.2s -- destination RSU unreachable, triggering live VCF selection
+  [RANGE-BOOST-TRIGGERED] VCF disabled -- using direct boost link
+  [RANGE-BOOST] VCF unavailable -- falling back to expensive direct link rsu0<->rsu1 at t=284.2s
+  [PIT-EXPIRED] Interest seq=279 from origin RSU (rsu1) timed out at t=284.2s -- destination RSU unreachable, triggering live VCF selection
+  [RANGE-BOOST-TRIGGERED] VCF disabled -- using direct boost link
+  [RANGE-BOOST] VCF unavailable -- falling back to expensive direct link rsu1<->rsu0 at t=284.2s
+  [RANGE-BOOST] Node0 now routes /traffic/update/rsu1 via a single next hop at t=284.25s
+  [RANGE-BOOST] Node1 now routes /traffic/update/rsu0 via a single next hop at t=284.25s
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=285.05s (data made t=285.0s, age 0.050016s): 18 veh, avg 37.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=286.05s (data made t=286.0s, age 0.050016s): 14 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=287.05s (data made t=287.0s, age 0.050016s): 19 veh, avg 37.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=288.05s (data made t=288.0s, age 0.050016s): 15 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=289.05s (data made t=289.0s, age 0.050016s): 18 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=290.05s (data made t=290.0s, age 0.050016s): 15 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=291.05s (data made t=291.0s, age 0.050016s): 17 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=292.05s (data made t=292.0s, age 0.050016s): 14 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=293.05s (data made t=293.0s, age 0.050016s): 17 veh, avg 38.3 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node105 switched its route for /traffic/update/rsu2
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=294.05s (data made t=294.0s, age 0.050016s): 16 veh, avg 38.9 m/s -> LOW
+  [HAZARD-ALERT-ROUTE] Node1 can now relay /safety/hazard/breakdown/veh101
+  [HAZARD-ALERT-ROUTE] Node104 can now relay /safety/hazard/breakdown/veh101
+  [HAZARD-ALERT-ROUTE] Node2 can now relay /safety/hazard/breakdown/veh101
+  [HAZARD-ALERT-ROUTE] Node106 can now relay /safety/hazard/breakdown/veh101
+  [HAZARD-ALERT-ROUTE] Node109 can now relay /safety/hazard/breakdown/veh101
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=295.025s (data made t=295.0s, age 0.025008s): 14 veh, avg 37.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=296.05s (data made t=296.0s, age 0.050016s): 16 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=297.025s (data made t=297.0s, age 0.025008s): 16 veh, avg 37.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=298.05s (data made t=298.0s, age 0.050016s): 15 veh, avg 38.6 m/s -> LOW
+  [HAZARD-ALERT-ROUTE] Node110 can now relay /safety/hazard/breakdown/veh101
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=299.025s (data made t=299.0s, age 0.025008s): 16 veh, avg 37.4 m/s -> LOW
+  [HAZARD-ALERT-ROUTE] Node111 can now relay /safety/hazard/breakdown/veh101
+[LIVE-COSIM] Live breakdown command for veh101 at t=299.8s -> OK
+  [HAZARD-RECEIVED] rsu2 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: relays the warning to approaching vehicles
+  [HAZARD-RECEIVED] rsu1 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: relays the warning to approaching vehicles
+  [HAZARD-RECEIVED] Vehicle100 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: hazard 295 m behind -> no action needed
+  [HAZARD-RECEIVED] Vehicle102 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: hazard 94 m AHEAD -> CHANGE LANE 0->1 + SLOW DOWN 37.4->18.7 m/s
+  [HAZARD-RECEIVED] Vehicle105 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: hazard 216 m AHEAD -> SLOW DOWN 41.4->20.7 m/s
+  [HAZARD-RECEIVED] Vehicle106 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: hazard 159 m AHEAD -> SLOW DOWN 38.8->19.4 m/s
+  [HAZARD-RECEIVED] Vehicle107 <- Vehicle101 stopped at (755.2, 1431.5), reported t=299.8s, received t=299.812s: hazard 212 m AHEAD -> SLOW DOWN 39.6->19.8 m/s
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=300.05s (data made t=300.0s, age 0.050016s): 16 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=301.025s (data made t=301.0s, age 0.025008s): 15 veh, avg 34.8 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=302.05s (data made t=302.0s, age 0.050016s): 16 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=303.025s (data made t=303.0s, age 0.025008s): 15 veh, avg 32.0 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=304.05s (data made t=304.0s, age 0.050016s): 15 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=305.025s (data made t=305.0s, age 0.025008s): 16 veh, avg 30.4 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=306.05s (data made t=306.0s, age 0.050016s): 16 veh, avg 38.5 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node107 switched its route for /traffic/update/rsu0
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=307.025s (data made t=307.0s, age 0.025008s): 16 veh, avg 30.7 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=308.025s (data made t=308.0s, age 0.025008s): 16 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=309.025s (data made t=309.0s, age 0.025008s): 17 veh, avg 32.2 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=310.025s (data made t=310.0s, age 0.025008s): 16 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=311.025s (data made t=311.0s, age 0.025008s): 15 veh, avg 33.5 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=312.025s (data made t=312.0s, age 0.025008s): 19 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=313.025s (data made t=313.0s, age 0.025008s): 14 veh, avg 34.4 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=314.025s (data made t=314.0s, age 0.025008s): 19 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=315.025s (data made t=315.0s, age 0.025008s): 15 veh, avg 35.5 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [VEHICLE-V2I-RECONNECT] Node105 switched its route for /traffic/update/rsu2
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=316.025s (data made t=316.0s, age 0.025008s): 18 veh, avg 39.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=317.05s (data made t=317.0s, age 0.050016s): 16 veh, avg 35.9 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=318.025s (data made t=318.0s, age 0.025008s): 18 veh, avg 39.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=319.05s (data made t=319.0s, age 0.050016s): 13 veh, avg 35.9 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=320.025s (data made t=320.0s, age 0.025008s): 17 veh, avg 39.7 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node133 can now relay /traffic/update/rsu3
+  [REQUEST] Vehicle129 -> rsu3 (traffic info) at t=321s
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=321.05s (data made t=321.0s, age 0.050016s): 14 veh, avg 36.6 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=322.025s (data made t=322.0s, age 0.025008s): 17 veh, avg 39.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=323.05s (data made t=323.0s, age 0.050016s): 16 veh, avg 36.9 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=324.025s (data made t=324.0s, age 0.025008s): 16 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=325.05s (data made t=325.0s, age 0.050016s): 16 veh, avg 36.8 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=326.025s (data made t=326.0s, age 0.025008s): 18 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=327.05s (data made t=327.0s, age 0.050016s): 16 veh, avg 36.8 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=328.025s (data made t=328.0s, age 0.025008s): 18 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=329.05s (data made t=329.0s, age 0.050016s): 16 veh, avg 36.7 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=330.025s (data made t=330.0s, age 0.025008s): 17 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=331.05s (data made t=331.0s, age 0.050016s): 17 veh, avg 36.4 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=332.025s (data made t=332.0s, age 0.025008s): 17 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=333.05s (data made t=333.0s, age 0.050016s): 17 veh, avg 36.8 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=334.025s (data made t=334.0s, age 0.025008s): 15 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=335.05s (data made t=335.0s, age 0.050016s): 19 veh, avg 37.0 m/s -> HEAVY [incident: Vehicle101-stopped]
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=336.025s (data made t=336.0s, age 0.025008s): 14 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=337.05s (data made t=337.0s, age 0.050016s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=338.025s (data made t=338.0s, age 0.025008s): 15 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=339.05s (data made t=339.0s, age 0.050016s): 18 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=340.025s (data made t=340.0s, age 0.025008s): 14 veh, avg 39.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle101 <- rsu2 at t=341.05s (data made t=341.0s, age 0.050016s): 18 veh, avg 38.5 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node133 switched its route for /traffic/update/rsu3
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=342.025s (data made t=342.0s, age 0.025008s): 15 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=344.025s (data made t=344.0s, age 0.025008s): 15 veh, avg 39.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle103 <- rsu0 at t=346.025s (data made t=346.0s, age 0.025008s): 14 veh, avg 39.4 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node144 can now relay /traffic/update/rsu0
+  [REQUEST] Vehicle140 -> rsu0 (traffic info) at t=348s
+  [VEHICLE-V2I-RECONNECT] Node144 switched its route for /traffic/update/rsu0
+  [RECOVERY-PRIMARY] Node1 now routes /traffic/update/rsu2 via a single next hop at t=353.6s
+  [RECOVERY-PRIMARY] Node2 now routes /traffic/update/rsu1 via a single next hop at t=353.6s
+  [RECOVERY-PRIMARY] Node2 now routes /traffic/update/rsu3 via a single next hop at t=353.6s
+  [RECOVERY-PRIMARY] Node3 now routes /traffic/update/rsu2 via a single next hop at t=353.6s
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=354.075s (data made t=354.0s, age 0.075024s): 15 veh, avg 39.9 m/s -> LOW
+  [RECOVERY-PRIMARY] Node0 now routes /traffic/update/rsu1 via a single next hop at t=354.2s
+  [RECOVERY-PRIMARY] Node1 now routes /traffic/update/rsu0 via a single next hop at t=354.2s
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=355.075s (data made t=355.0s, age 0.075024s): 14 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=356.075s (data made t=356.0s, age 0.075024s): 15 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=357.075s (data made t=357.0s, age 0.075024s): 15 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=358.075s (data made t=358.0s, age 0.075024s): 16 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=359.075s (data made t=359.0s, age 0.075024s): 14 veh, avg 39.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=360.075s (data made t=360.0s, age 0.075024s): 17 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=361.075s (data made t=361.0s, age 0.075024s): 13 veh, avg 39.2 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node133 switched its route for /traffic/update/rsu3
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=362.075s (data made t=362.0s, age 0.075024s): 16 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=363.05s (data made t=363.0s, age 0.050016s): 12 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=364.075s (data made t=364.0s, age 0.075024s): 15 veh, avg 39.2 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node151 can now relay /traffic/update/rsu2
+  [REQUEST] Vehicle147 -> rsu2 (traffic info) at t=365s
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=365.05s (data made t=365.0s, age 0.050016s): 12 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=365.05s (data made t=365.0s, age 0.050016s): 18 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=366.075s (data made t=366.0s, age 0.075024s): 15 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=367.05s (data made t=367.0s, age 0.050016s): 12 veh, avg 38.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=367.05s (data made t=367.0s, age 0.050016s): 18 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=368.075s (data made t=368.0s, age 0.075024s): 15 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=369.05s (data made t=369.0s, age 0.050016s): 11 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=369.05s (data made t=369.0s, age 0.050016s): 18 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=370.075s (data made t=370.0s, age 0.075024s): 14 veh, avg 39.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=371.05s (data made t=371.0s, age 0.050016s): 11 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=371.05s (data made t=371.0s, age 0.050016s): 17 veh, avg 38.6 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node151 switched its route for /traffic/update/rsu2
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=372.075s (data made t=372.0s, age 0.075024s): 15 veh, avg 40.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=373.025s (data made t=373.0s, age 0.025008s): 16 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=373.05s (data made t=373.0s, age 0.050016s): 11 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=374.075s (data made t=374.0s, age 0.075024s): 16 veh, avg 39.5 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node144 switched its route for /traffic/update/rsu0
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=375.025s (data made t=375.0s, age 0.025008s): 16 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=375.05s (data made t=375.0s, age 0.050016s): 11 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=376.05s (data made t=376.0s, age 0.050016s): 16 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=377.025s (data made t=377.0s, age 0.025008s): 14 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=377.05s (data made t=377.0s, age 0.050016s): 11 veh, avg 38.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=378.05s (data made t=378.0s, age 0.050016s): 17 veh, avg 39.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=379.025s (data made t=379.0s, age 0.025008s): 15 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=379.05s (data made t=379.0s, age 0.050016s): 9 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=380.05s (data made t=380.0s, age 0.050016s): 18 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=381.025s (data made t=381.0s, age 0.025008s): 14 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=381.05s (data made t=381.0s, age 0.050016s): 6 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=382.05s (data made t=382.0s, age 0.050016s): 18 veh, avg 39.5 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node133 switched its route for /traffic/update/rsu3
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=383.025s (data made t=383.0s, age 0.025008s): 9 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=383.025s (data made t=383.0s, age 0.025008s): 13 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=384.05s (data made t=384.0s, age 0.050016s): 18 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=385.025s (data made t=385.0s, age 0.025008s): 9 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=385.025s (data made t=385.0s, age 0.025008s): 15 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=386.05s (data made t=386.0s, age 0.050016s): 18 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=387.025s (data made t=387.0s, age 0.025008s): 8 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=387.025s (data made t=387.0s, age 0.025008s): 14 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=388.05s (data made t=388.0s, age 0.050016s): 19 veh, avg 39.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=389.025s (data made t=389.0s, age 0.025008s): 9 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=389.025s (data made t=389.0s, age 0.025008s): 15 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=390.05s (data made t=390.0s, age 0.050016s): 18 veh, avg 39.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=391.025s (data made t=391.0s, age 0.025008s): 8 veh, avg 40.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=391.025s (data made t=391.0s, age 0.025008s): 15 veh, avg 39.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=392.05s (data made t=392.0s, age 0.050016s): 16 veh, avg 39.7 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node151 switched its route for /traffic/update/rsu2
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=393.025s (data made t=393.0s, age 0.025008s): 11 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=393.05s (data made t=393.0s, age 0.050016s): 15 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=394.05s (data made t=394.0s, age 0.050016s): 14 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=395.025s (data made t=395.0s, age 0.025008s): 11 veh, avg 40.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=395.05s (data made t=395.0s, age 0.050016s): 14 veh, avg 40.2 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node144 switched its route for /traffic/update/rsu0
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=396.025s (data made t=396.0s, age 0.025008s): 16 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=397.025s (data made t=397.0s, age 0.025008s): 11 veh, avg 39.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=397.05s (data made t=397.0s, age 0.050016s): 15 veh, avg 40.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=398.025s (data made t=398.0s, age 0.025008s): 16 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=399.025s (data made t=399.0s, age 0.025008s): 10 veh, avg 40.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=399.05s (data made t=399.0s, age 0.050016s): 15 veh, avg 40.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=400.025s (data made t=400.0s, age 0.025008s): 17 veh, avg 38.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=401.025s (data made t=401.0s, age 0.025008s): 10 veh, avg 40.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=401.05s (data made t=401.0s, age 0.050016s): 14 veh, avg 40.5 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node166 can now relay /traffic/update/rsu3
+  [REQUEST] Vehicle162 -> rsu3 (traffic info) at t=402s
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=402.025s (data made t=402.0s, age 0.025008s): 17 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=402.025s (data made t=402.0s, age 0.025008s): 11 veh, avg 40.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=403.025s (data made t=403.0s, age 0.025008s): 11 veh, avg 40.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=403.05s (data made t=403.0s, age 0.050016s): 13 veh, avg 40.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=404.025s (data made t=404.0s, age 0.025008s): 17 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=404.025s (data made t=404.0s, age 0.025008s): 13 veh, avg 41.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=405.025s (data made t=405.0s, age 0.025008s): 13 veh, avg 40.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=405.05s (data made t=405.0s, age 0.050016s): 13 veh, avg 40.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=406.025s (data made t=406.0s, age 0.025008s): 18 veh, avg 38.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=406.025s (data made t=406.0s, age 0.025008s): 13 veh, avg 41.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle129 <- rsu3 at t=407.025s (data made t=407.0s, age 0.025008s): 12 veh, avg 40.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=407.05s (data made t=407.0s, age 0.050016s): 13 veh, avg 40.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=408.025s (data made t=408.0s, age 0.025008s): 16 veh, avg 38.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=408.025s (data made t=408.0s, age 0.025008s): 9 veh, avg 41.0 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node166 switched its route for /traffic/update/rsu3
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=409.05s (data made t=409.0s, age 0.050016s): 16 veh, avg 40.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=410.025s (data made t=410.0s, age 0.025008s): 17 veh, avg 37.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=410.05s (data made t=410.0s, age 0.050016s): 10 veh, avg 41.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=411.05s (data made t=411.0s, age 0.050016s): 15 veh, avg 40.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=412.025s (data made t=412.0s, age 0.025008s): 18 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=412.05s (data made t=412.0s, age 0.050016s): 11 veh, avg 41.1 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node151 switched its route for /traffic/update/rsu2
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=413.075s (data made t=413.0s, age 0.075024s): 14 veh, avg 40.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=414.025s (data made t=414.0s, age 0.025008s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=414.05s (data made t=414.0s, age 0.050016s): 12 veh, avg 41.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=415.075s (data made t=415.0s, age 0.075024s): 15 veh, avg 39.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=416.025s (data made t=416.0s, age 0.025008s): 15 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=416.05s (data made t=416.0s, age 0.050016s): 11 veh, avg 41.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=417.075s (data made t=417.0s, age 0.075024s): 16 veh, avg 39.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=418.025s (data made t=418.0s, age 0.025008s): 16 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=418.05s (data made t=418.0s, age 0.050016s): 10 veh, avg 40.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=419.075s (data made t=419.0s, age 0.075024s): 16 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=420.025s (data made t=420.0s, age 0.025008s): 16 veh, avg 37.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=420.05s (data made t=420.0s, age 0.050016s): 9 veh, avg 41.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=421.075s (data made t=421.0s, age 0.075024s): 17 veh, avg 40.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=422.025s (data made t=422.0s, age 0.025008s): 16 veh, avg 37.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=422.05s (data made t=422.0s, age 0.050016s): 9 veh, avg 41.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=423.075s (data made t=423.0s, age 0.075024s): 18 veh, avg 40.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=424.025s (data made t=424.0s, age 0.025008s): 13 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=424.05s (data made t=424.0s, age 0.050016s): 10 veh, avg 41.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=425.075s (data made t=425.0s, age 0.075024s): 18 veh, avg 39.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=426.025s (data made t=426.0s, age 0.025008s): 14 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=426.05s (data made t=426.0s, age 0.050016s): 9 veh, avg 40.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=427.075s (data made t=427.0s, age 0.075024s): 16 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=428.025s (data made t=428.0s, age 0.025008s): 14 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=428.05s (data made t=428.0s, age 0.050016s): 7 veh, avg 40.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=429.075s (data made t=429.0s, age 0.075024s): 17 veh, avg 39.8 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node166 switched its route for /traffic/update/rsu3
+  [VEHICLE-V2I-SETUP] Node177 can now relay /traffic/update/rsu0
+  [REQUEST] Vehicle173 -> rsu0 (traffic info) at t=430s
+  [TRAFFIC-UPDATE] Vehicle140 <- rsu0 at t=430.025s (data made t=430.0s, age 0.025008s): 14 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=430.075s (data made t=430.0s, age 0.075024s): 8 veh, avg 41.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=430.1s (data made t=430.0s, age 0.100032s): 14 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=431.075s (data made t=431.0s, age 0.075024s): 16 veh, avg 39.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=432.075s (data made t=432.0s, age 0.075024s): 9 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=432.1s (data made t=432.0s, age 0.100032s): 13 veh, avg 37.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=433.075s (data made t=433.0s, age 0.075024s): 16 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=434.075s (data made t=434.0s, age 0.075024s): 9 veh, avg 39.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=434.1s (data made t=434.0s, age 0.100032s): 15 veh, avg 37.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=435.075s (data made t=435.0s, age 0.075024s): 16 veh, avg 39.0 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node177 switched its route for /traffic/update/rsu0
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=436.075s (data made t=436.0s, age 0.075024s): 9 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=436.075s (data made t=436.0s, age 0.075024s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=437.075s (data made t=437.0s, age 0.075024s): 16 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=438.075s (data made t=438.0s, age 0.075024s): 9 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=438.075s (data made t=438.0s, age 0.075024s): 16 veh, avg 38.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=439.075s (data made t=439.0s, age 0.075024s): 17 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=440.075s (data made t=440.0s, age 0.075024s): 9 veh, avg 39.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=440.075s (data made t=440.0s, age 0.075024s): 16 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=441.075s (data made t=441.0s, age 0.075024s): 18 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=442.075s (data made t=442.0s, age 0.075024s): 12 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=442.075s (data made t=442.0s, age 0.075024s): 15 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=443.075s (data made t=443.0s, age 0.075024s): 19 veh, avg 38.9 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node183 can now relay /traffic/update/rsu1
+  [REQUEST] Vehicle179 -> rsu1 (traffic info) at t=444s
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=444.05s (data made t=444.0s, age 0.050408s): 15 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=444.075s (data made t=444.0s, age 0.075024s): 12 veh, avg 39.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=444.075s (data made t=444.0s, age 0.075024s): 16 veh, avg 38.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=445.075s (data made t=445.0s, age 0.075024s): 18 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=446.05s (data made t=446.0s, age 0.050408s): 13 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=446.075s (data made t=446.0s, age 0.075024s): 13 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=446.075s (data made t=446.0s, age 0.075024s): 16 veh, avg 38.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=447.075s (data made t=447.0s, age 0.075024s): 18 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=448.05s (data made t=448.0s, age 0.050408s): 14 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=448.075s (data made t=448.0s, age 0.075024s): 14 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=448.075s (data made t=448.0s, age 0.075024s): 16 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=449.075s (data made t=449.0s, age 0.075024s): 17 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=450.05s (data made t=450.0s, age 0.050408s): 15 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=450.075s (data made t=450.0s, age 0.075024s): 14 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=450.075s (data made t=450.0s, age 0.075024s): 17 veh, avg 38.3 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node166 switched its route for /traffic/update/rsu3
+  [TRAFFIC-UPDATE] Vehicle147 <- rsu2 at t=451.075s (data made t=451.0s, age 0.075024s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=452.05s (data made t=452.0s, age 0.050408s): 14 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=452.075s (data made t=452.0s, age 0.075024s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=452.1s (data made t=452.0s, age 0.100032s): 14 veh, avg 38.8 m/s -> LOW
+  [VEHICLE-V2I-SETUP] Node187 can now relay /traffic/update/rsu1
+  [VEHICLE-V2I-RECONNECT] Node177 switched its route for /traffic/update/rsu0
+  [REQUEST] Vehicle183 -> rsu1 (traffic info) at t=454s
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=454.025s (data made t=444.0s, age 10.025s): 15 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=454.05s (data made t=454.0s, age 0.050016s): 16 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=454.05s (data made t=454.0s, age 0.050408s): 14 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=454.1s (data made t=454.0s, age 0.100032s): 12 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=456.025s (data made t=446.0s, age 10.025s): 13 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=456.05s (data made t=456.0s, age 0.050016s): 17 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=456.05s (data made t=456.0s, age 0.050408s): 15 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=456.1s (data made t=456.0s, age 0.100032s): 12 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=458.025s (data made t=448.0s, age 10.025s): 14 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=458.05s (data made t=458.0s, age 0.050016s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=458.05s (data made t=458.0s, age 0.050408s): 17 veh, avg 38.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=458.1s (data made t=458.0s, age 0.100032s): 12 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=460.025s (data made t=450.0s, age 10.025s): 15 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=460.05s (data made t=460.0s, age 0.050016s): 17 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=460.05s (data made t=460.0s, age 0.050408s): 18 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=460.1s (data made t=460.0s, age 0.100032s): 11 veh, avg 39.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=462.025s (data made t=452.0s, age 10.025s): 14 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=462.05s (data made t=462.0s, age 0.050016s): 17 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=462.05s (data made t=462.0s, age 0.050408s): 18 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=462.1s (data made t=462.0s, age 0.100032s): 11 veh, avg 39.7 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node183 switched its route for /traffic/update/rsu1
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=464.025s (data made t=454.0s, age 10.025s): 14 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=464.025s (data made t=464.0s, age 0.025008s): 17 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=464.05s (data made t=464.0s, age 0.050016s): 17 veh, avg 38.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=464.1s (data made t=464.0s, age 0.100032s): 8 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=466.025s (data made t=456.0s, age 10.025s): 15 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=466.025s (data made t=466.0s, age 0.025008s): 16 veh, avg 37.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=466.05s (data made t=466.0s, age 0.050016s): 18 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=466.1s (data made t=466.0s, age 0.100032s): 8 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=468.025s (data made t=458.0s, age 10.025s): 17 veh, avg 38.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=468.025s (data made t=468.0s, age 0.025008s): 16 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=468.05s (data made t=468.0s, age 0.050016s): 18 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=468.1s (data made t=468.0s, age 0.100032s): 10 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=470.025s (data made t=460.0s, age 10.025s): 18 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=470.025s (data made t=470.0s, age 0.025008s): 15 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=470.05s (data made t=470.0s, age 0.050016s): 18 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=470.1s (data made t=470.0s, age 0.100032s): 9 veh, avg 37.9 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node177 switched its route for /traffic/update/rsu0
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=472.025s (data made t=462.0s, age 10.025s): 18 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=472.025s (data made t=472.0s, age 0.025008s): 16 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=472.025s (data made t=472.0s, age 0.025008s): 17 veh, avg 38.7 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node187 switched its route for /traffic/update/rsu1
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=472.1s (data made t=472.0s, age 0.100032s): 10 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=474.025s (data made t=464.0s, age 10.025s): 17 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=474.025s (data made t=474.0s, age 0.025008s): 15 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=474.025s (data made t=474.0s, age 0.025008s): 17 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=474.1s (data made t=474.0s, age 0.100032s): 10 veh, avg 37.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=476.025s (data made t=466.0s, age 10.025s): 16 veh, avg 37.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=476.025s (data made t=476.0s, age 0.025008s): 15 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=476.025s (data made t=476.0s, age 0.025008s): 17 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=476.1s (data made t=476.0s, age 0.100032s): 10 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=478.025s (data made t=468.0s, age 10.025s): 16 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=478.025s (data made t=478.0s, age 0.025008s): 14 veh, avg 39.0 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=478.025s (data made t=478.0s, age 0.025008s): 18 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=478.1s (data made t=478.0s, age 0.100032s): 11 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=480.025s (data made t=470.0s, age 10.025s): 15 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=480.025s (data made t=480.0s, age 0.025008s): 14 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=480.025s (data made t=480.0s, age 0.025008s): 16 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=480.1s (data made t=480.0s, age 0.100032s): 11 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=482.025s (data made t=472.0s, age 10.025s): 17 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=482.025s (data made t=482.0s, age 0.025008s): 13 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=482.025s (data made t=482.0s, age 0.025008s): 17 veh, avg 38.8 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node183 switched its route for /traffic/update/rsu1
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=482.1s (data made t=482.0s, age 0.100032s): 12 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=484.025s (data made t=474.0s, age 10.025s): 17 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=484.025s (data made t=484.0s, age 0.025008s): 13 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=484.05s (data made t=484.0s, age 0.050408s): 15 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=484.1s (data made t=484.0s, age 0.100032s): 12 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=486.025s (data made t=476.0s, age 10.025s): 17 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=486.025s (data made t=486.0s, age 0.025008s): 14 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=486.05s (data made t=486.0s, age 0.050408s): 15 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=486.1s (data made t=486.0s, age 0.100032s): 13 veh, avg 37.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=488.025s (data made t=478.0s, age 10.025s): 18 veh, avg 39.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=488.025s (data made t=488.0s, age 0.025008s): 15 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=488.05s (data made t=488.0s, age 0.050408s): 17 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle162 <- rsu3 at t=488.1s (data made t=488.0s, age 0.100032s): 13 veh, avg 37.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=490.025s (data made t=480.0s, age 10.025s): 16 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=490.025s (data made t=490.0s, age 0.025008s): 13 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=490.05s (data made t=490.0s, age 0.050016s): 17 veh, avg 38.4 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node187 switched its route for /traffic/update/rsu1
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=492.025s (data made t=492.0s, age 0.025008s): 13 veh, avg 38.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=492.05s (data made t=492.0s, age 0.050016s): 17 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=492.055s (data made t=482.0s, age 10.0546s): 17 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=494.025s (data made t=484.0s, age 10.025s): 15 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=494.025s (data made t=494.0s, age 0.025008s): 14 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=494.05s (data made t=494.0s, age 0.050016s): 16 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=496.025s (data made t=486.0s, age 10.025s): 15 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=496.025s (data made t=496.0s, age 0.025008s): 16 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=496.05s (data made t=496.0s, age 0.050016s): 15 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=498.025s (data made t=488.0s, age 10.025s): 17 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=498.025s (data made t=498.0s, age 0.025008s): 17 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=498.05s (data made t=498.0s, age 0.050016s): 15 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=500.025s (data made t=490.0s, age 10.025s): 17 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=500.025s (data made t=500.0s, age 0.025008s): 14 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=500.05s (data made t=500.0s, age 0.050016s): 14 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=502.025s (data made t=492.0s, age 10.025s): 17 veh, avg 38.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=502.025s (data made t=502.0s, age 0.025008s): 12 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=502.05s (data made t=502.0s, age 0.050016s): 13 veh, avg 39.1 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node183 switched its route for /traffic/update/rsu1
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=504.025s (data made t=494.0s, age 10.025s): 16 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle173 <- rsu0 at t=504.025s (data made t=504.0s, age 0.025008s): 13 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=504.075s (data made t=504.0s, age 0.075024s): 14 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=506.025s (data made t=496.0s, age 10.025s): 15 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=506.075s (data made t=506.0s, age 0.075024s): 14 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=508.025s (data made t=498.0s, age 10.025s): 15 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=508.075s (data made t=508.0s, age 0.075024s): 13 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=510.025s (data made t=500.0s, age 10.025s): 14 veh, avg 38.8 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=510.075s (data made t=510.0s, age 0.075024s): 13 veh, avg 38.2 m/s -> LOW
+  [VEHICLE-V2I-RECONNECT] Node187 switched its route for /traffic/update/rsu1
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=512.05s (data made t=502.0s, age 10.0504s): 13 veh, avg 39.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=512.075s (data made t=512.0s, age 0.075024s): 14 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=514.025s (data made t=504.0s, age 10.025s): 14 veh, avg 38.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=514.075s (data made t=514.0s, age 0.075024s): 14 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=516.025s (data made t=506.0s, age 10.025s): 14 veh, avg 38.7 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=516.075s (data made t=516.0s, age 0.075024s): 15 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=518.025s (data made t=508.0s, age 10.025s): 13 veh, avg 38.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=518.075s (data made t=518.0s, age 0.075024s): 16 veh, avg 37.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=520.025s (data made t=510.0s, age 10.025s): 13 veh, avg 38.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=520.075s (data made t=520.0s, age 0.075024s): 17 veh, avg 37.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=522.025s (data made t=512.0s, age 10.025s): 14 veh, avg 37.9 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=522.075s (data made t=522.0s, age 0.075024s): 17 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=524.025s (data made t=514.0s, age 10.025s): 14 veh, avg 38.1 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle179 <- rsu1 at t=524.075s (data made t=524.0s, age 0.075024s): 16 veh, avg 37.4 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=526.025s (data made t=516.0s, age 10.025s): 15 veh, avg 37.6 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=528.025s (data made t=518.0s, age 10.025s): 16 veh, avg 37.2 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=530.025s (data made t=520.0s, age 10.025s): 17 veh, avg 37.3 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=532.025s (data made t=522.0s, age 10.025s): 17 veh, avg 37.5 m/s -> LOW
+  [TRAFFIC-UPDATE] Vehicle183 <- rsu1 at t=534.025s (data made t=524.0s, age 10.025s): 16 veh, avg 37.4 m/s -> LOW
+==== highway ODD simulation complete ====
+[METRICS] Total routing overhead: 112

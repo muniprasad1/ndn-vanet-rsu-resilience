@@ -1,0 +1,47 @@
+
+=================== FULL REPORT: urban mf_s5_C ===================
+--- mechanism counts
+  PIT-EXPIRED                  11062
+  VCF-FERRY\] Vehicle          424
+  FERRY-DELIVERY\]             409
+  FERRY-DELIVERY-SKIPPED       15
+  TRANSIT-FERRY\] Vehicle      0
+  TRANSIT-FERRY\] No carrier   39
+  RANGE-BOOST-TRIGGERED        0
+  RANGE-BOOST-END              0
+  DETOUR\]                     1462
+  DETOUR-END                   1423
+  RECOVERY-PRIMARY             202
+  LAST-MILE-RELAY\]            0
+  LAST-MILE-FAILED             0
+  breaks down                  7
+  HAZARD-RECEIVED              133
+--- network level
+SatisfiedInterests: 595882   TimedOutInterests: 635
+ISR: 99.89%
+LastDelay avg: 26.665 ms  (n=441883)
+FullDelay avg: 0.322 s  (n=441883)
+--- application level
+failure window: 152.9-448.6 s, failed RSUs: 23
+pure requester vehicles found: 10 [150, 187, 201, 208, 242, 258, 277, 351, 375, 383]
+(RetxCount minimum in file = 1; 'first-try' = delivered with no retry)
+category                                 delivered first-try% avg sends never-deliv delivered% LastDelay ms FullDelay s
+ALL                                         441883      99.42     1.026         n/a        n/a        26.66       0.322
+RSU backbone                                419082      99.41     1.026           0     100.00        26.03       0.328
+Vehicles                                     22801      99.56     1.013         n/a        n/a        38.42       0.206
+RSU in failure window                       203342      98.79     1.054           0     100.00        26.23       0.648
+Veh in failure window                        22525      99.66     1.011         n/a        n/a        33.50       0.177
+RSU on a FAILED RSU, during its outage        8305      81.60     1.948           0     100.00        25.83      11.148
+Requester vehicles                             916      89.08     1.332           1      99.89       149.55       4.320
+Requesters in failure window                   657      88.43     1.387           1      99.85       134.21       5.050
+--- information age (requesters)
+  updates=916  median=0.08s  p95=0.18s  max=2.11s
+  updates older than 2 s: 1
+--- first ferries / transit
+  [VCF-FERRY] Vehicle35 loads /traffic/update/rsu21 seq 148-170 at rsu21 (t=153.2s, in range until 158s), reaches rsu8 at t=153.2s, leaves at t=172s
+  [VCF-FERRY] Vehicle98 loads /traffic/update/rsu21 seq 148-168 at rsu21 (t=153.2s, in range until 164s), reaches rsu20 at t=153.2s, leaves at t=170s
+  [VCF-FERRY] Vehicle132 loads /traffic/update/rsu22 seq 148-196 at rsu22 (t=153.2s, in range until 187s), reaches rsu21 at t=153.2s, leaves at t=198s
+  [TRANSIT-FERRY] No carrier at rsu78 for Vehicle87 at t=227.25s
+  [TRANSIT-FERRY] No carrier at rsu112 for Vehicle36 at t=240.25s
+  [TRANSIT-FERRY] No carrier at rsu97 for Vehicle163 at t=242.35s
+  [TRANSIT-FERRY] No carrier at rsu97 for Vehicle163 at t=247.4s

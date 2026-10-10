@@ -1,0 +1,31 @@
+== results_baseline_vcfonly ==
+==== ODD scenario: highway ====
+VCF-FERRY\] Vehicle        45
+FERRY-DELIVERY\]           45
+FERRY-DELIVERY-SKIPPED     0
+TRANSIT-FERRY\] Vehicle    8
+RANGE-BOOST-TRIGGERED      0
+RANGE-BOOST-END            0
+RECOVERY-PRIMARY           6
+PIT-EXPIRED                45
+DETOUR\]                   0
+DETOUR-END                 0
+breaks down                3
+HAZARD-RECEIVED            18
+SatisfiedInterests: 10371   TimedOutInterests: 185
+ISR: 98.25%
+LastDelay avg: 39.814 ms  (n=5201)
+FullDelay avg: 0.222 s  (n=5201)
+== App-level metrics: highway  (/home/muni/2026-09-26-livecosim/results_baseline_vcfonly) ==
+failure window: 160.8-354.1 s, failed RSUs: 2
+pure requester vehicles found: 10 [73, 105, 107, 133, 144, 151, 166, 177, 183, 187]
+(RetxCount minimum in file = 1; 'first-try' = delivered with no retry)
+category                                 delivered first-try% avg sends never-deliv delivered% LastDelay ms FullDelay s
+ALL                                           5201      98.58     1.023         n/a        n/a        39.81       0.222
+RSU backbone                                  3524      98.78     1.013           0     100.00        31.81       0.045
+Vehicles                                      1677      98.15     1.044         n/a        n/a        56.64       0.595
+RSU in failure window                         1123      96.17     1.040           0     100.00        42.06       0.082
+Veh in failure window                         1416      97.81     1.052         n/a        n/a        48.90       0.686
+RSU on a FAILED RSU, during its outage         438      95.66     1.048           0     100.00        46.87       0.095
+Requester vehicles                             336      90.77     1.217           1      99.70        52.37       2.737
+Requesters in failure window                    78      60.26     1.936           1      98.73        39.56      11.604

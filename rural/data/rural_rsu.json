@@ -1,0 +1,220 @@
+{
+  "scenario": "rural",
+  "rsu_comm_range_m": 800.0,
+  "rsu_count": 19,
+  "parameters": {
+    "net": "/home/muni/rural-odd/osm.net.xml.gz",
+    "prefix": "rural_rsu",
+    "out_dir": ".",
+    "spacing": 1500.0,
+    "range": 800.0,
+    "snap_radius": null,
+    "min_sep": null,
+    "vclass": "passenger",
+    "exclude_types": "highway.residential,highway.unclassified,highway.service,highway.track,highway.footway,highway.path,highway.living_street",
+    "offset": null,
+    "failures": null,
+    "auto_failures": 0,
+    "seed": 42,
+    "fail_start": 150.0,
+    "fail_end": 450.0,
+    "fail_duration": 75.0,
+    "compare": null
+  },
+  "placement": {
+    "bbox": [
+      0.0,
+      566.5,
+      8512.03,
+      7454.62
+    ],
+    "grid_points": 30,
+    "empty_cells": 11,
+    "dropped_too_close": 0,
+    "snap_radius": 750.0,
+    "min_sep": 750.0
+  },
+  "num_rsus": 19,
+  "neighbour_pairs_within_range": 0,
+  "neighbours_per_rsu": {
+    "min": 0,
+    "max": 0,
+    "avg": 0.0
+  },
+  "isolated_rsus": [
+    "rsu0",
+    "rsu1",
+    "rsu2",
+    "rsu3",
+    "rsu4",
+    "rsu5",
+    "rsu6",
+    "rsu7",
+    "rsu8",
+    "rsu9",
+    "rsu10",
+    "rsu11",
+    "rsu12",
+    "rsu13",
+    "rsu14",
+    "rsu15",
+    "rsu16",
+    "rsu17",
+    "rsu18"
+  ],
+  "failures": [],
+  "rsus": [
+    {
+      "id": "rsu0",
+      "x": 2702.6,
+      "y": 1057.79,
+      "edge": "-816050963#0",
+      "grid_x": 2250.0,
+      "grid_y": 1316.5
+    },
+    {
+      "id": "rsu1",
+      "x": 3852.33,
+      "y": 1300.42,
+      "edge": "818748336#5",
+      "grid_x": 3750.0,
+      "grid_y": 1316.5
+    },
+    {
+      "id": "rsu2",
+      "x": 4716.35,
+      "y": 1276.46,
+      "edge": "-816178416",
+      "grid_x": 5250.0,
+      "grid_y": 1316.5
+    },
+    {
+      "id": "rsu3",
+      "x": 6575.48,
+      "y": 1100.61,
+      "edge": "30434506#0",
+      "grid_x": 6750.0,
+      "grid_y": 1316.5
+    },
+    {
+      "id": "rsu4",
+      "x": 8329.07,
+      "y": 616.42,
+      "edge": "30434506#0",
+      "grid_x": 8250.0,
+      "grid_y": 1316.5
+    },
+    {
+      "id": "rsu5",
+      "x": 952.01,
+      "y": 2533.88,
+      "edge": "816542980#9",
+      "grid_x": 750.0,
+      "grid_y": 2816.5
+    },
+    {
+      "id": "rsu6",
+      "x": 2444.75,
+      "y": 2693.01,
+      "edge": "816082978#8",
+      "grid_x": 2250.0,
+      "grid_y": 2816.5
+    },
+    {
+      "id": "rsu7",
+      "x": 3743.43,
+      "y": 2712.85,
+      "edge": "816082978#4",
+      "grid_x": 3750.0,
+      "grid_y": 2816.5
+    },
+    {
+      "id": "rsu8",
+      "x": 5088.97,
+      "y": 3053.44,
+      "edge": "818408712#8",
+      "grid_x": 5250.0,
+      "grid_y": 2816.5
+    },
+    {
+      "id": "rsu9",
+      "x": 3304.7,
+      "y": 4148.41,
+      "edge": "30434506#38",
+      "grid_x": 3750.0,
+      "grid_y": 4316.5
+    },
+    {
+      "id": "rsu10",
+      "x": 5226.67,
+      "y": 4885.72,
+      "edge": "816286426#2",
+      "grid_x": 5250.0,
+      "grid_y": 4316.5
+    },
+    {
+      "id": "rsu11",
+      "x": 6724.89,
+      "y": 3824.85,
+      "edge": "-818408712#19",
+      "grid_x": 6750.0,
+      "grid_y": 4316.5
+    },
+    {
+      "id": "rsu12",
+      "x": 8070.7,
+      "y": 3915.83,
+      "edge": "-818701755#2",
+      "grid_x": 8250.0,
+      "grid_y": 4316.5
+    },
+    {
+      "id": "rsu13",
+      "x": 2035.09,
+      "y": 5555.16,
+      "edge": "30434506#55",
+      "grid_x": 2250.0,
+      "grid_y": 5816.5
+    },
+    {
+      "id": "rsu14",
+      "x": 3498.15,
+      "y": 5229.24,
+      "edge": "-816286426#0",
+      "grid_x": 3750.0,
+      "grid_y": 5816.5
+    },
+    {
+      "id": "rsu15",
+      "x": 5497.3,
+      "y": 5780.17,
+      "edge": "817218362",
+      "grid_x": 5250.0,
+      "grid_y": 5816.5
+    },
+    {
+      "id": "rsu16",
+      "x": 6648.63,
+      "y": 5448.0,
+      "edge": "-816286426#5",
+      "grid_x": 6750.0,
+      "grid_y": 5816.5
+    },
+    {
+      "id": "rsu17",
+      "x": 7846.42,
+      "y": 5342.24,
+      "edge": "-816286426#5",
+      "grid_x": 8250.0,
+      "grid_y": 5816.5
+    },
+    {
+      "id": "rsu18",
+      "x": 5708.92,
+      "y": 7247.28,
+      "edge": "817218362",
+      "grid_x": 5250.0,
+      "grid_y": 7316.5
+    }
+  ]
+}

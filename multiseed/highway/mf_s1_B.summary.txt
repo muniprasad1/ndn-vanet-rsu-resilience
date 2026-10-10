@@ -1,0 +1,40 @@
+
+=================== FULL REPORT: highway final_B ===================
+--- mechanism counts
+  PIT-EXPIRED                  62
+  VCF-FERRY\] Vehicle          0
+  FERRY-DELIVERY\]             0
+  FERRY-DELIVERY-SKIPPED       0
+  TRANSIT-FERRY\] Vehicle      0
+  TRANSIT-FERRY\] No carrier   0
+  RANGE-BOOST-TRIGGERED        62
+  RANGE-BOOST-END              56
+  DETOUR\]                     0
+  DETOUR-END                   0
+  RECOVERY-PRIMARY             6
+  LAST-MILE-RELAY\]            0
+  LAST-MILE-FAILED             0
+  breaks down                  3
+  HAZARD-RECEIVED              18
+--- network level
+SatisfiedInterests: 7378   TimedOutInterests: 141
+ISR: 98.12%
+LastDelay avg: 45.188 ms  (n=3876)
+FullDelay avg: 0.229 s  (n=3876)
+--- application level
+failure window: 160.8-354.1 s, failed RSUs: 2
+pure requester vehicles found: 10 [73, 105, 107, 133, 144, 151, 166, 177, 183, 187]
+(RetxCount minimum in file = 1; 'first-try' = delivered with no retry)
+category                                 delivered first-try% avg sends never-deliv delivered% LastDelay ms FullDelay s
+ALL                                           3876      97.65     1.027         n/a        n/a        45.19       0.229
+RSU backbone                                  3507      98.23     1.018           0     100.00        31.84       0.050
+Vehicles                                       369      92.14     1.119         n/a        n/a       172.03       1.934
+RSU in failure window                         1106      94.39     1.056           0     100.00        42.33       0.098
+Veh in failure window                          106      72.64     1.415         n/a        n/a       353.64       6.486
+RSU on a FAILED RSU, during its outage         430      92.79     1.072           0     100.00        47.28       0.119
+Requester vehicles                             356      91.85     1.124           0     100.00        54.30       1.880
+Requesters in failure window                    96      69.79     1.458           0     100.00        47.63       6.818
+--- information age (requesters)
+  updates=356  median=0.05s  p95=0.10s  max=2.08s
+  updates older than 2 s: 3
+--- first ferries / transit

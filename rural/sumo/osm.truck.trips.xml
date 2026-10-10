@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-01 07:42:34.936608 by Eclipse SUMO randomTrips.py v1.27.1
+<configuration>
+    <net-file value="osm.net.xml.gz"/>
+    <output-trip-file value="osm.truck.trips.xml"/>
+    <prefix value="truck"/>
+    <vehicle-class value="truck"/>
+    <fringe-factor value="5"/>
+    <seed value="43"/>
+    <min-distance value="1000.0"/>
+    <remove-loops value="True"/>
+    <end value="600.0"/>
+    <period value="33.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="truck_truck" vClass="truck"/>
+    <trip id="truck0" depart="0.00" from="-816286427#7" to="-817827279#0" type="truck_truck"/>
+    <trip id="truck1" depart="33.00" from="816286425#0" to="816494443#3" type="truck_truck"/>
+    <trip id="truck2" depart="66.00" from="816082978#5" to="-818701755#0" type="truck_truck"/>
+    <trip id="truck3" depart="99.00" from="-30434506#31" to="-816854708" type="truck_truck"/>
+    <trip id="truck4" depart="132.00" from="-820860013#3" to="817775027" type="truck_truck"/>
+    <trip id="truck5" depart="165.00" from="816096064" to="816286426#5" type="truck_truck"/>
+    <trip id="truck6" depart="198.00" from="818313639#1" to="816542971" type="truck_truck"/>
+    <trip id="truck7" depart="231.00" from="-820924333#1" to="-816082991" type="truck_truck"/>
+    <trip id="truck8" depart="264.00" from="816083004" to="-818661820#0" type="truck_truck"/>
+    <trip id="truck9" depart="297.00" from="816542966#1" to="-818758109" type="truck_truck"/>
+    <trip id="truck10" depart="330.00" from="816083002" to="-818758101#0" type="truck_truck"/>
+    <trip id="truck11" depart="363.00" from="-820924333#1" to="-816050964" type="truck_truck"/>
+    <trip id="truck12" depart="396.00" from="-816082978#7" to="818748352#5" type="truck_truck"/>
+    <trip id="truck13" depart="429.00" from="817827278#0" to="-816286427#0" type="truck_truck"/>
+    <trip id="truck14" depart="462.00" from="818748321#0" to="-818748336#1" type="truck_truck"/>
+    <trip id="truck15" depart="495.00" from="-816178416" to="817775028#2" type="truck_truck"/>
+    <trip id="truck16" depart="528.00" from="816096080#0" to="818748345#1" type="truck_truck"/>
+    <trip id="truck17" depart="561.00" from="816286427#2" to="-816082989" type="truck_truck"/>
+    <trip id="truck18" depart="594.00" from="816178413#0" to="816291422#1" type="truck_truck"/>
+</routes>

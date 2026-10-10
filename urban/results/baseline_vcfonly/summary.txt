@@ -1,0 +1,31 @@
+== results_baseline_vcfonly ==
+==== ODD scenario: urban ====
+VCF-FERRY\] Vehicle        518
+FERRY-DELIVERY\]           500
+FERRY-DELIVERY-SKIPPED     18
+TRANSIT-FERRY\] Vehicle    2
+RANGE-BOOST-TRIGGERED      0
+RANGE-BOOST-END            0
+RECOVERY-PRIMARY           250
+PIT-EXPIRED                12384
+DETOUR\]                   3075
+DETOUR-END                 2732
+breaks down                7
+HAZARD-RECEIVED            131
+SatisfiedInterests: 621317   TimedOutInterests: 259
+ISR: 99.96%
+LastDelay avg: 26.592 ms  (n=445006)
+FullDelay avg: 0.350 s  (n=445006)
+== App-level metrics: urban  (/home/muni/urban-odd-400/results_baseline_vcfonly) ==
+failure window: 150.7-425.6 s, failed RSUs: 23
+pure requester vehicles found: 10 [129, 155, 176, 185, 199, 255, 378, 403, 421, 483]
+(RetxCount minimum in file = 1; 'first-try' = delivered with no retry)
+category                                 delivered first-try% avg sends never-deliv delivered% LastDelay ms FullDelay s
+ALL                                         445006      99.38     1.028         n/a        n/a        26.59       0.350
+RSU backbone                                417760      99.35     1.030           0     100.00        26.02       0.367
+Vehicles                                     27246      99.72     1.007         n/a        n/a        35.31       0.093
+RSU in failure window                       186888      98.55     1.066           0     100.00        26.32       0.788
+Veh in failure window                        27003      99.83     1.004         n/a        n/a        31.53       0.072
+RSU on a FAILED RSU, during its outage       10012      83.30     1.830           0     100.00        31.22       9.798
+Requester vehicles                             701      89.02     1.260           5      99.29       165.81       2.397
+Requesters in failure window                   473      90.27     1.228           5      98.95       144.64       2.441

@@ -1,0 +1,8 @@
+
+Inside the failure window 160.8-354.1 s:
+
+run                    backbone answers  backbone ISR  backbone wait  requester answers  requester ISR  requester wait
+A-no-recovery                       254         64.6%          2.97s                 35          24.1%          36.31s
+B-range-boost                      1162         93.9%          0.05s                 92          62.6%           2.94s
+C-VCF                              1123         91.4%          0.08s                 52          39.7%          16.89s
+D-VCF-transit-final                1123         92.7%          0.08s                 65          48.5%           8.41s

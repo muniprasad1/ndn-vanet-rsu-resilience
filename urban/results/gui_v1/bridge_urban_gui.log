@@ -1,0 +1,29 @@
+[BRIDGE] Launching sumo-gui -c /home/muni/urban-odd-400/osm_gui.sumocfg --end 600.0 on TraCI port 8813 ...
+ Retrying in 1 seconds
+Could not connect to TraCI server at localhost:8813 [Errno 111] Connection refused
+ Retrying in 1 seconds
+Could not connect to TraCI server at localhost:8813 [Errno 111] Connection refused
+ Retrying in 1 seconds
+[BRIDGE] SUMO started. Waiting for a bridge client to connect ...
+[BRIDGE] Listening for ns-3 (or a test client) on 127.0.0.1:9001 ...
+[BRIDGE] Client connected from ('127.0.0.1', 49022)
+[BRIDGE] Live breakdown issued for veh47 at t=84.0s pos=(2206.9,1676.4) lane=:cluster_12096541235_1429078606_0_0
+[BRIDGE] Live breakdown issued for veh48 at t=91.0s pos=(4423.5,1246.7) lane=-129584367_0
+[BRIDGE] Hazard action for veh76 (stopped veh48 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Hazard action for veh65 (stopped veh48 ahead): SLOW DOWN 7.2->5.0 m/s
+[BRIDGE] Hazard action for veh10 (stopped veh48 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Live breakdown issued for truck1 at t=140.0s pos=(3689.6,1001.9) lane=1034047278#0-AddedOffRampEdge_1
+[BRIDGE] Hazard action for veh77 (stopped truck1 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Hazard action for veh76 (stopped truck1 ahead): SLOW DOWN 27.2->13.6 m/s
+[BRIDGE] Hazard action for veh10 (stopped truck1 ahead): SLOW DOWN 27.2->13.6 m/s
+[BRIDGE] Hazard action for bus5 (stopped truck1 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Hazard action for truck8 (stopped truck1 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Live breakdown issued for veh97 at t=196.0s pos=(3671.2,1994.1) lane=1031897157_0
+[BRIDGE] Hazard action for veh11 (stopped veh97 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Hazard action for veh144 (stopped veh97 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Live breakdown issued for veh118 at t=197.0s pos=(4394.6,2532.6) lane=1030704264_0
+[BRIDGE] Hazard action for veh139 (stopped veh118 ahead): NO ACTION (hazard not on its route)
+[BRIDGE] Live breakdown issued for veh155 at t=207.0s pos=(5095.0,1953.4) lane=-1259084310#1_0
+[BRIDGE] Hazard action for veh184 (stopped veh155 ahead): SLOW DOWN 13.7->6.9 m/s
+[BRIDGE] Live breakdown issued for truck33 at t=425.0s pos=(4234.0,1414.2) lane=1034047279#3_0
+[BRIDGE] Hazard action for veh239 (stopped truck33 ahead): NO ACTION (hazard not on its route)

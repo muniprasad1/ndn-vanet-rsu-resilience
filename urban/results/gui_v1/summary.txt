@@ -1,0 +1,4 @@
+SatisfiedInterests: 638470   TimedOutInterests: 253
+ISR: 99.96%
+LastDelay avg: 26.542 ms  (n=454316)
+FullDelay avg: 0.061 s  (n=454316)

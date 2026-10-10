@@ -1,0 +1,47 @@
+
+=================== FULL REPORT: rural mf_s2_C ===================
+--- mechanism counts
+  PIT-EXPIRED                  3375
+  VCF-FERRY\] Vehicle          23
+  FERRY-DELIVERY\]             19
+  FERRY-DELIVERY-SKIPPED       4
+  TRANSIT-FERRY\] Vehicle      0
+  TRANSIT-FERRY\] No carrier   32
+  RANGE-BOOST-TRIGGERED        0
+  RANGE-BOOST-END              0
+  DETOUR\]                     97
+  DETOUR-END                   97
+  RECOVERY-PRIMARY             32
+  LAST-MILE-RELAY\]            0
+  LAST-MILE-FAILED             0
+  breaks down                  4
+  HAZARD-RECEIVED              19
+--- network level
+SatisfiedInterests: 54646   TimedOutInterests: 406
+ISR: 99.26%
+LastDelay avg: 28.217 ms  (n=35465)
+FullDelay avg: 1.246 s  (n=35465)
+--- application level
+failure window: 241.9-430.7 s, failed RSUs: 4
+pure requester vehicles found: 10 [45, 52, 60, 93, 110, 128, 130, 145, 150, 165]
+(RetxCount minimum in file = 1; 'first-try' = delivered with no retry)
+category                                 delivered first-try% avg sends never-deliv delivered% LastDelay ms FullDelay s
+ALL                                          35465      98.56     1.099         n/a        n/a        28.22       1.246
+RSU backbone                                 33457      98.55     1.101           0     100.00        25.60       1.263
+Vehicles                                      2008      98.71     1.063         n/a        n/a        71.80       0.948
+RSU in failure window                         8385      94.23     1.403           0     100.00        25.62       4.965
+Veh in failure window                         1604      99.25     1.050         n/a        n/a        50.30       0.863
+RSU on a FAILED RSU, during its outage         616      53.73     3.695           0     100.00        25.31      32.756
+Requester vehicles                             437      94.05     1.288           0     100.00        84.83       4.112
+Requesters in failure window                    40      70.00     3.025           0     100.00        81.20      32.681
+--- information age (requesters)
+  updates=437  median=0.08s  p95=0.11s  max=0.11s
+  updates older than 2 s: 0
+--- first ferries / transit
+  [VCF-FERRY] Vehicle42 loads /traffic/update/rsu8 seq 237-327 at rsu8 (t=242.2s, in range until 328s), reaches rsu10 at t=363s, leaves at t=468s
+  [VCF-FERRY] Vehicle24 loads /traffic/update/rsu14 seq 237-322 at rsu14 (t=246.6s, in range until 278s), reaches rsu10 at t=289s, leaves at t=327s
+  [VCF-FERRY] Vehicle60 loads /traffic/update/rsu2 seq 248-262 at rsu2 (t=253.2s, in range until 259s), reaches rsu1 at t=253.2s, leaves at t=264s
+  [TRANSIT-FERRY] No carrier at rsu0 for Vehicle41 at t=255.8s
+  [TRANSIT-FERRY] No carrier at rsu15 for Vehicle26 at t=267.8s
+  [TRANSIT-FERRY] No carrier at rsu0 for Vehicle41 at t=267.8s
+  [TRANSIT-FERRY] No carrier at rsu18 for Vehicle33 at t=271.8s

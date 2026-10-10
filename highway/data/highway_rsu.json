@@ -1,0 +1,43 @@
+{
+  "scenario": "highway",
+  "rsu_comm_range_m": 800.0,
+  "rsu_count": 4,
+  "rsus": [
+    {
+      "id": "rsu0",
+      "x": 1263.34,
+      "y": 2353.28,
+      "edge": "1196272130"
+    },
+    {
+      "id": "rsu1",
+      "x": 892.78,
+      "y": 1644.31,
+      "edge": "1196272130"
+    },
+    {
+      "id": "rsu2",
+      "x": 520.9,
+      "y": 936.07,
+      "edge": "1196272130"
+    },
+    {
+      "id": "rsu3",
+      "x": 154.55,
+      "y": 224.99,
+      "edge": "1196272130"
+    }
+  ],
+  "failure_schedule": [
+    {
+      "rsu_id": "rsu2",
+      "fail_start": 160.8,
+      "fail_end": 353.5
+    },
+    {
+      "rsu_id": "rsu0",
+      "fail_start": 283.9,
+      "fail_end": 354.1
+    }
+  ]
+}

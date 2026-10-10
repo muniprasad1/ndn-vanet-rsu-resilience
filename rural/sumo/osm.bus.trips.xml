@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-01 07:42:40.432754 by Eclipse SUMO randomTrips.py v1.27.1
+<configuration>
+    <net-file value="osm.net.xml.gz"/>
+    <output-trip-file value="osm.bus.trips.xml"/>
+    <prefix value="bus"/>
+    <vehicle-class value="bus"/>
+    <fringe-factor value="5"/>
+    <seed value="44"/>
+    <min-distance value="1000.0"/>
+    <remove-loops value="True"/>
+    <end value="600.0"/>
+    <period value="50.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus_bus" vClass="bus"/>
+    <trip id="bus0" depart="0.00" from="30434506#6" to="-818748348" type="bus_bus"/>
+    <trip id="bus1" depart="50.00" from="818408712#20" to="-816096069" type="bus_bus"/>
+    <trip id="bus2" depart="100.00" from="-816178429" to="-30434506#18" type="bus_bus"/>
+    <trip id="bus3" depart="150.00" from="-816291416#3" to="-818748323" type="bus_bus"/>
+    <trip id="bus4" depart="200.00" from="819398799" to="816082993#0" type="bus_bus"/>
+    <trip id="bus5" depart="250.00" from="1237161859" to="-816542973" type="bus_bus"/>
+    <trip id="bus6" depart="300.00" from="-816082997#2" to="816854704" type="bus_bus"/>
+    <trip id="bus7" depart="350.00" from="816178411" to="-816082997#0" type="bus_bus"/>
+    <trip id="bus8" depart="400.00" from="816178414" to="818758101#2" type="bus_bus"/>
+    <trip id="bus9" depart="450.00" from="-30434506#55" to="-816542962#1" type="bus_bus"/>
+    <trip id="bus10" depart="500.00" from="816082992" to="818701762" type="bus_bus"/>
+    <trip id="bus11" depart="550.00" from="-816542952" to="-816178421#1" type="bus_bus"/>
+</routes>
